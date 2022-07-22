@@ -42,6 +42,7 @@ namespace ProgettoRistorante
             this.accessoGestore.TabIndex = 0;
             this.accessoGestore.Text = "Gestore";
             this.accessoGestore.UseVisualStyleBackColor = true;
+            this.accessoGestore.Click += new System.EventHandler(this.accessoGestore_Click);
             // 
             // accessoCliente
             // 
@@ -51,6 +52,7 @@ namespace ProgettoRistorante
             this.accessoCliente.TabIndex = 1;
             this.accessoCliente.Text = "Cliente";
             this.accessoCliente.UseVisualStyleBackColor = true;
+            this.accessoCliente.Click += new System.EventHandler(this.accessoCliente_Click);
             // 
             // accessoLabel
             // 

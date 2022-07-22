@@ -16,5 +16,21 @@ namespace ProgettoRistorante
         {
             InitializeComponent();
         }
+
+        private void accessoCliente_Click(object sender, EventArgs e)
+        {
+            Cliente cliente = new Cliente();
+            this.Hide();
+            cliente.ShowDialog();
+            this.Close();
+        }
+
+        private void accessoGestore_Click(object sender, EventArgs e)
+        {
+            Gestore gestore = new Gestore();
+            this.Hide();
+            gestore.ShowDialog();
+            this.Close();
+        }
     }
 }
