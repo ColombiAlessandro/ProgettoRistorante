@@ -8,3 +8,4 @@ C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\
 C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.csproj.CoreCompileInputs.cache
 C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.exe
 C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.pdb
+C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.Gestore.resources

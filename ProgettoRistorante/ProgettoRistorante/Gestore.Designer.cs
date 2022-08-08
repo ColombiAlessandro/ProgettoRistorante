@@ -30,12 +30,14 @@ namespace ProgettoRistorante
         private void InitializeComponent()
         {
             this.bottoneAggiunta = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.bottoneRicerca = new System.Windows.Forms.Button();
+            this.bottoneVisualizza = new System.Windows.Forms.Button();
+            this.bottoneModifica = new System.Windows.Forms.Button();
+            this.bottoneElimina = new System.Windows.Forms.Button();
             this.indietro1 = new System.Windows.Forms.Button();
-            this.indietro2 = new System.Windows.Forms.Button();
+            this.pulsanteAvantiPassword = new System.Windows.Forms.Button();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.labelAccesso = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bottoneAggiunta
@@ -46,42 +48,47 @@ namespace ProgettoRistorante
             this.bottoneAggiunta.TabIndex = 0;
             this.bottoneAggiunta.Text = "Aggiunta";
             this.bottoneAggiunta.UseVisualStyleBackColor = true;
+            this.bottoneAggiunta.Visible = false;
             // 
-            // button2
+            // bottoneRicerca
             // 
-            this.button2.Location = new System.Drawing.Point(218, 204);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 33);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Ricerca";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bottoneRicerca.Location = new System.Drawing.Point(218, 204);
+            this.bottoneRicerca.Name = "bottoneRicerca";
+            this.bottoneRicerca.Size = new System.Drawing.Size(103, 33);
+            this.bottoneRicerca.TabIndex = 1;
+            this.bottoneRicerca.Text = "Ricerca";
+            this.bottoneRicerca.UseVisualStyleBackColor = true;
+            this.bottoneRicerca.Visible = false;
             // 
-            // button3
+            // bottoneVisualizza
             // 
-            this.button3.Location = new System.Drawing.Point(327, 204);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(103, 33);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Visualizza totale";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bottoneVisualizza.Location = new System.Drawing.Point(327, 204);
+            this.bottoneVisualizza.Name = "bottoneVisualizza";
+            this.bottoneVisualizza.Size = new System.Drawing.Size(103, 33);
+            this.bottoneVisualizza.TabIndex = 2;
+            this.bottoneVisualizza.Text = "Visualizza totale";
+            this.bottoneVisualizza.UseVisualStyleBackColor = true;
+            this.bottoneVisualizza.Visible = false;
             // 
-            // button4
+            // bottoneModifica
             // 
-            this.button4.Location = new System.Drawing.Point(436, 204);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(103, 33);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Modifica";
-            this.button4.UseVisualStyleBackColor = true;
+            this.bottoneModifica.Location = new System.Drawing.Point(436, 204);
+            this.bottoneModifica.Name = "bottoneModifica";
+            this.bottoneModifica.Size = new System.Drawing.Size(103, 33);
+            this.bottoneModifica.TabIndex = 3;
+            this.bottoneModifica.Text = "Modifica";
+            this.bottoneModifica.UseVisualStyleBackColor = true;
+            this.bottoneModifica.Visible = false;
             // 
-            // button5
+            // bottoneElimina
             // 
-            this.button5.Location = new System.Drawing.Point(545, 204);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(103, 33);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Elimina";
-            this.button5.UseVisualStyleBackColor = true;
+            this.bottoneElimina.Location = new System.Drawing.Point(545, 204);
+            this.bottoneElimina.Name = "bottoneElimina";
+            this.bottoneElimina.Size = new System.Drawing.Size(103, 33);
+            this.bottoneElimina.TabIndex = 4;
+            this.bottoneElimina.Text = "Elimina";
+            this.bottoneElimina.UseVisualStyleBackColor = true;
+            this.bottoneElimina.Visible = false;
             // 
             // indietro1
             // 
@@ -91,43 +98,68 @@ namespace ProgettoRistorante
             this.indietro1.TabIndex = 5;
             this.indietro1.Text = "Indietro";
             this.indietro1.UseVisualStyleBackColor = true;
+            this.indietro1.Click += new System.EventHandler(this.indietro1_Click);
             // 
-            // indietro2
+            // pulsanteAvantiPassword
             // 
-            this.indietro2.Location = new System.Drawing.Point(12, 12);
-            this.indietro2.Name = "indietro2";
-            this.indietro2.Size = new System.Drawing.Size(103, 33);
-            this.indietro2.TabIndex = 6;
-            this.indietro2.Text = "Indietro";
-            this.indietro2.UseVisualStyleBackColor = true;
-            this.indietro2.Visible = false;
+            this.pulsanteAvantiPassword.Location = new System.Drawing.Point(327, 307);
+            this.pulsanteAvantiPassword.Name = "pulsanteAvantiPassword";
+            this.pulsanteAvantiPassword.Size = new System.Drawing.Size(103, 33);
+            this.pulsanteAvantiPassword.TabIndex = 7;
+            this.pulsanteAvantiPassword.Text = "Avanti";
+            this.pulsanteAvantiPassword.UseVisualStyleBackColor = true;
+            this.pulsanteAvantiPassword.Click += new System.EventHandler(this.pulsanteAvantiPassword_Click);
+            // 
+            // passwordTextBox
+            // 
+            this.passwordTextBox.Location = new System.Drawing.Point(327, 161);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(100, 20);
+            this.passwordTextBox.TabIndex = 8;
+            this.passwordTextBox.Text = "Password";
+            this.passwordTextBox.TextChanged += new System.EventHandler(this.passwordTextBox_TextChanged);
+            // 
+            // labelAccesso
+            // 
+            this.labelAccesso.AutoSize = true;
+            this.labelAccesso.Location = new System.Drawing.Point(270, 118);
+            this.labelAccesso.Name = "labelAccesso";
+            this.labelAccesso.Size = new System.Drawing.Size(224, 13);
+            this.labelAccesso.TabIndex = 9;
+            this.labelAccesso.Text = "Inserisci la password per accedere alla pagina";
             // 
             // Gestore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.indietro2);
+            this.Controls.Add(this.labelAccesso);
+            this.Controls.Add(this.passwordTextBox);
+            this.Controls.Add(this.pulsanteAvantiPassword);
             this.Controls.Add(this.indietro1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.bottoneElimina);
+            this.Controls.Add(this.bottoneModifica);
+            this.Controls.Add(this.bottoneVisualizza);
+            this.Controls.Add(this.bottoneRicerca);
             this.Controls.Add(this.bottoneAggiunta);
             this.Name = "Gestore";
             this.Text = "Gestore";
+            this.Load += new System.EventHandler(this.Gestore_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button bottoneAggiunta;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button bottoneRicerca;
+        private System.Windows.Forms.Button bottoneVisualizza;
+        private System.Windows.Forms.Button bottoneModifica;
+        private System.Windows.Forms.Button bottoneElimina;
         private System.Windows.Forms.Button indietro1;
-        private System.Windows.Forms.Button indietro2;
+        private System.Windows.Forms.Button pulsanteAvantiPassword;
+        private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.Label labelAccesso;
     }
 }

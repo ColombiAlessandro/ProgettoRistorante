@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ProgettoRistorante
 {
@@ -15,6 +16,49 @@ namespace ProgettoRistorante
         public Gestore()
         {
             InitializeComponent();
+        }
+
+        private void passwordTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Gestore_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void indietro1_Click(object sender, EventArgs e)
+        {
+            Form1 home = new Form1();
+            this.Hide();
+            home.ShowDialog();
+            this.Close();
+        }
+
+        private void pulsanteAvantiPassword_Click(object sender, EventArgs e)
+        {
+            if (passwordTextBox.Text == leggi(@"Password.csv"))
+            {
+                bottoneAggiunta.Visible = true;
+                bottoneVisualizza.Visible = true;
+                bottoneRicerca.Visible = true;
+                bottoneElimina.Visible = true;
+                bottoneModifica.Visible = true;
+                passwordTextBox.Visible = false;
+                pulsanteAvantiPassword.Visible = false;
+                labelAccesso.Visible = false;
+            }
+        }
+        public static string leggi(string filename)
+        {
+            StreamReader sr = new StreamReader(filename);
+            string line="";
+            if((line = sr.ReadLine()) != null)
+            {
+                sr.Close(); 
+            }
+            return line;
         }
     }
 }
