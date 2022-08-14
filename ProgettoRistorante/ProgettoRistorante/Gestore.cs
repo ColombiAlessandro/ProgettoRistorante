@@ -60,5 +60,13 @@ namespace ProgettoRistorante
             }
             return line;
         }
+
+        private void bottoneAggiunta_Click(object sender, EventArgs e)
+        {
+            Aggiunta agg = new Aggiunta();
+            this.Hide();
+            agg.ShowDialog();
+            this.Close();
+        }
     }
 }

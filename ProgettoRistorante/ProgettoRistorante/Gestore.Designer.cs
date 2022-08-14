@@ -49,6 +49,7 @@ namespace ProgettoRistorante
             this.bottoneAggiunta.Text = "Aggiunta";
             this.bottoneAggiunta.UseVisualStyleBackColor = true;
             this.bottoneAggiunta.Visible = false;
+            this.bottoneAggiunta.Click += new System.EventHandler(this.bottoneAggiunta_Click);
             // 
             // bottoneRicerca
             // 

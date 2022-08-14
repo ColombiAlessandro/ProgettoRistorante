@@ -16,7 +16,12 @@ namespace ProgettoRistorante
         {
             InitializeComponent();
         }
-
+        public struct Piatto
+        {
+            public string nome;
+            public string prezzo;
+            public string[] ingredienti;
+        }
         private void accessoCliente_Click(object sender, EventArgs e)
         {
             Cliente cliente = new Cliente();

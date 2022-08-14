@@ -9,3 +9,15 @@ C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\
 C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.exe
 C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.pdb
 C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.Gestore.resources
+C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\bin\Debug\ProgettoRistorante.exe.config
+C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\bin\Debug\ProgettoRistorante.exe
+C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\bin\Debug\ProgettoRistorante.pdb
+C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.csproj.AssemblyReference.cache
+C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.Aggiunta.resources
+C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.Form1.resources
+C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.Gestore.resources
+C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.Properties.Resources.resources
+C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.csproj.GenerateResource.cache
+C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.csproj.CoreCompileInputs.cache
+C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.exe
+C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.pdb
