@@ -21,3 +21,6 @@ C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\Progetto
 C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.csproj.CoreCompileInputs.cache
 C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.exe
 C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.pdb
+C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.Aggiunta.resources
+C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.Ricerca.resources
+C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.VisualizzaTOT.resources

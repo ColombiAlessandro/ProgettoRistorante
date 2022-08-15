@@ -114,6 +114,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Ricerca.resx">
+      <DependentUpon>Ricerca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualizzaTOT.resx">
+      <DependentUpon>VisualizzaTOT.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

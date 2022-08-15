@@ -60,6 +60,7 @@ namespace ProgettoRistorante
             this.bottoneRicerca.Text = "Ricerca";
             this.bottoneRicerca.UseVisualStyleBackColor = true;
             this.bottoneRicerca.Visible = false;
+            this.bottoneRicerca.Click += new System.EventHandler(this.bottoneRicerca_Click);
             // 
             // bottoneVisualizza
             // 
@@ -70,6 +71,7 @@ namespace ProgettoRistorante
             this.bottoneVisualizza.Text = "Visualizza totale";
             this.bottoneVisualizza.UseVisualStyleBackColor = true;
             this.bottoneVisualizza.Visible = false;
+            this.bottoneVisualizza.Click += new System.EventHandler(this.bottoneVisualizza_Click);
             // 
             // bottoneModifica
             // 

@@ -68,5 +68,21 @@ namespace ProgettoRistorante
             agg.ShowDialog();
             this.Close();
         }
+
+        private void bottoneRicerca_Click(object sender, EventArgs e)
+        {
+            Ricerca ric = new Ricerca();
+            this.Hide();
+            ric.ShowDialog();
+            this.Close();
+        }
+
+        private void bottoneVisualizza_Click(object sender, EventArgs e)
+        {
+            VisualizzaTOT vis = new VisualizzaTOT();
+            this.Hide();
+            vis.ShowDialog();
+            this.Close();
+        }
     }
 }

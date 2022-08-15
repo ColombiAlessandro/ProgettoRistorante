@@ -21,6 +21,7 @@ namespace ProgettoRistorante
             public string nome;
             public string prezzo;
             public string[] ingredienti;
+            public string portata;
         }
         private void accessoCliente_Click(object sender, EventArgs e)
         {

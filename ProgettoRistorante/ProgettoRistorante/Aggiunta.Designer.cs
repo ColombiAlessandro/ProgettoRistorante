@@ -39,6 +39,7 @@ namespace ProgettoRistorante
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.portataBox = new System.Windows.Forms.ComboBox();
+            this.indietroBottone = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // confermaButton
@@ -121,6 +122,7 @@ namespace ProgettoRistorante
             // 
             // portataBox
             // 
+            this.portataBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.portataBox.FormattingEnabled = true;
             this.portataBox.Items.AddRange(new object[] {
             "Antipasto",
@@ -130,14 +132,24 @@ namespace ProgettoRistorante
             this.portataBox.Location = new System.Drawing.Point(122, 246);
             this.portataBox.Name = "portataBox";
             this.portataBox.Size = new System.Drawing.Size(121, 21);
-            this.portataBox.TabIndex = 9;
-            this.portataBox.Text = "Antipasto";
+            this.portataBox.TabIndex = 0;
+            // 
+            // indietroBottone
+            // 
+            this.indietroBottone.Location = new System.Drawing.Point(13, 13);
+            this.indietroBottone.Name = "indietroBottone";
+            this.indietroBottone.Size = new System.Drawing.Size(75, 23);
+            this.indietroBottone.TabIndex = 10;
+            this.indietroBottone.Text = "Indietro";
+            this.indietroBottone.UseVisualStyleBackColor = true;
+            this.indietroBottone.Click += new System.EventHandler(this.indietroBottone_Click);
             // 
             // Aggiunta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.indietroBottone);
             this.Controls.Add(this.portataBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -167,5 +179,6 @@ namespace ProgettoRistorante
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox portataBox;
+        private System.Windows.Forms.Button indietroBottone;
     }
 }

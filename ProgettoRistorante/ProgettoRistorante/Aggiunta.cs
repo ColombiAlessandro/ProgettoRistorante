@@ -36,16 +36,9 @@ namespace ProgettoRistorante
                     ingredientiText.Text = string.Empty;
                     return;
                 }
+                scriviAppend(@"Menu.csv", "Nome:");
                 scriviAppend(@"Menu.csv", nomeText.Text);
-                try
-                {
-                    int.Parse(prezzoText.Text);
-                }
-                catch (Exception ecc)
-                {
-                    MessageBox.Show("Prezzo invalido");
-                    
-                }
+                scriviAppend(@"Menu.csv", "Prezzo:");
                 scriviAppend(@"Menu.csv", prezzoText.Text);
                 string[] tmp = ingredientiText.Text.Split('\n');
                 
@@ -62,7 +55,9 @@ namespace ProgettoRistorante
                         ingredienti += $"{tmp[i]}\n";
                     }
                 }
+                scriviAppend(@"Menu.csv", "Ingredienti:");
                 scriviAppend(@"Menu.csv", ingredienti);
+                scriviAppend(@"Menu.csv", "Portata:");
                 scriviAppend(@"Menu.csv", portataBox.Text);
                 scriviAppend(@"Menu.csv", ";");
                 nomeText.Text = string.Empty;
@@ -86,6 +81,14 @@ namespace ProgettoRistorante
             StreamWriter sw = new StreamWriter(oStream);
             sw.WriteLine(content);
             sw.Close();
+        }
+
+        private void indietroBottone_Click(object sender, EventArgs e)
+        {
+            Gestore gs = new Gestore();
+            this.Hide();
+            gs.ShowDialog();
+            this.Close();
         }
     }
 }
