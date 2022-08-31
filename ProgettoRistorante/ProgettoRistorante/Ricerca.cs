@@ -45,6 +45,14 @@ namespace ProgettoRistorante
             
             while ((line = sr.ReadLine()) != null)
             {
+                if (line == "//")
+                {
+                    line = sr.ReadLine();
+                    while (line != "//")
+                    {
+                        line = sr.ReadLine();
+                    }
+                }
                 if (line == ricerca) 
                 {
                     isFound = true;
@@ -67,6 +75,14 @@ namespace ProgettoRistorante
                 piatto = string.Empty;
             }
             return piatto;
+        }
+
+        private void indietroButton_Click(object sender, EventArgs e)
+        {
+            Gestore ges = new Gestore();
+            this.Hide();
+            ges.ShowDialog();
+            this.Close();
         }
     }
 }

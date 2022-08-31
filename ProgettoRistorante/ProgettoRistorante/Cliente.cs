@@ -16,5 +16,29 @@ namespace ProgettoRistorante
         {
             InitializeComponent();
         }
+
+        private void aggiungiButton_Click(object sender, EventArgs e)
+        {
+            Ordina ord = new Ordina();
+            this.Hide();
+            ord.ShowDialog();
+            this.Close();
+        }
+
+        private void eliminaButton_Click(object sender, EventArgs e)
+        {
+            EliminaCliente ord = new EliminaCliente();
+            this.Hide();
+            ord.ShowDialog();
+            this.Close();
+        }
+
+        private void scontrinoButton_Click(object sender, EventArgs e)
+        {
+            Scontrino ord = new Scontrino();
+            this.Hide();
+            ord.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -21,7 +21,7 @@ namespace ProgettoRistorante
         private void button1_Click(object sender, EventArgs e)
         {
             
-            if (!(String.IsNullOrEmpty(nomeText.Text)) && !(String.IsNullOrEmpty(prezzoText.Text))&& !(String.IsNullOrEmpty(ingredientiText.Text))&& !(String.IsNullOrEmpty(ingredientiText.Text)))
+            if (!(String.IsNullOrEmpty(nomeText.Text)) && !(String.IsNullOrEmpty(prezzoText.Text))&& !(String.IsNullOrEmpty(ingredientiText.Text))&& !(String.IsNullOrEmpty(portataBox.Text)))
             {
                 
                 try

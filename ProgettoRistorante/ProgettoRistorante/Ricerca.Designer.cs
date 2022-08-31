@@ -33,6 +33,7 @@ namespace ProgettoRistorante
             this.nomePiatto = new System.Windows.Forms.TextBox();
             this.risultatoTextBox = new System.Windows.Forms.RichTextBox();
             this.cercaBottone = new System.Windows.Forms.Button();
+            this.indietroButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -71,11 +72,22 @@ namespace ProgettoRistorante
             this.cercaBottone.UseVisualStyleBackColor = true;
             this.cercaBottone.Click += new System.EventHandler(this.button1_Click);
             // 
+            // indietroButton
+            // 
+            this.indietroButton.Location = new System.Drawing.Point(13, 13);
+            this.indietroButton.Name = "indietroButton";
+            this.indietroButton.Size = new System.Drawing.Size(75, 23);
+            this.indietroButton.TabIndex = 5;
+            this.indietroButton.Text = "Indietro";
+            this.indietroButton.UseVisualStyleBackColor = true;
+            this.indietroButton.Click += new System.EventHandler(this.indietroButton_Click);
+            // 
             // Ricerca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.indietroButton);
             this.Controls.Add(this.cercaBottone);
             this.Controls.Add(this.risultatoTextBox);
             this.Controls.Add(this.nomePiatto);
@@ -94,5 +106,6 @@ namespace ProgettoRistorante
         private System.Windows.Forms.TextBox nomePiatto;
         private System.Windows.Forms.RichTextBox risultatoTextBox;
         private System.Windows.Forms.Button cercaBottone;
+        private System.Windows.Forms.Button indietroButton;
     }
 }

@@ -20,7 +20,7 @@ namespace ProgettoRistorante
 
         private void passwordTextBox_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Gestore_Load(object sender, EventArgs e)
@@ -38,17 +38,7 @@ namespace ProgettoRistorante
 
         private void pulsanteAvantiPassword_Click(object sender, EventArgs e)
         {
-            if (passwordTextBox.Text == leggi(@"Password.csv"))
-            {
-                bottoneAggiunta.Visible = true;
-                bottoneVisualizza.Visible = true;
-                bottoneRicerca.Visible = true;
-                bottoneElimina.Visible = true;
-                bottoneModifica.Visible = true;
-                passwordTextBox.Visible = false;
-                pulsanteAvantiPassword.Visible = false;
-                labelAccesso.Visible = false;
-            }
+            
         }
         public static string leggi(string filename)
         {
@@ -82,6 +72,30 @@ namespace ProgettoRistorante
             VisualizzaTOT vis = new VisualizzaTOT();
             this.Hide();
             vis.ShowDialog();
+            this.Close();
+        }
+
+        private void bottoneModifica_Click(object sender, EventArgs e)
+        {
+            Modifica mod = new Modifica();
+            this.Hide();
+            mod.ShowDialog();
+            this.Close();
+        }
+
+        private void bottoneElimina_Click(object sender, EventArgs e)
+        {
+            Elimina el = new Elimina();
+            this.Hide();
+            el.ShowDialog();
+            this.Close();
+        }
+
+        private void recuperaButton_Click(object sender, EventArgs e)
+        {
+            Recupera rec = new Recupera();
+            this.Hide();
+            rec.ShowDialog();
             this.Close();
         }
     }

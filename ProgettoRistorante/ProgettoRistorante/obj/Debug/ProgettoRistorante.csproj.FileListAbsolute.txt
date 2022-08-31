@@ -24,3 +24,11 @@ C:\Users\aless\OneDrive\Desktop\ProgettoInformatica1\ProgettoRistorante\Progetto
 C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.Aggiunta.resources
 C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.Ricerca.resources
 C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.VisualizzaTOT.resources
+C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.Modifica.resources
+C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.Elimina.resources
+C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.Recupera.resources
+C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.Cliente.resources
+C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.Ordina.resources
+C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.EliminaCliente.resources
+C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.Scontrino.resources
+C:\Users\aless\Desktop\ProgettoRistorante\ProgettoRistorante\ProgettoRistorante\obj\Debug\ProgettoRistorante.AccessoGestore.resources

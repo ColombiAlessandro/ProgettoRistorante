@@ -33,7 +33,7 @@ namespace ProgettoRistorante
 
         private void accessoGestore_Click(object sender, EventArgs e)
         {
-            Gestore gestore = new Gestore();
+            AccessoGestore gestore = new AccessoGestore();
             this.Hide();
             gestore.ShowDialog();
             this.Close();
