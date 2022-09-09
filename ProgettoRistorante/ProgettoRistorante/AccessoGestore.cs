@@ -27,6 +27,10 @@ namespace ProgettoRistorante
                 this.Hide();
                 ges.ShowDialog();
                 this.Close();
+            } else
+            {
+                MessageBox.Show("Password errata");
+                textBox1.Text = string.Empty;
             }
         }
         public static string leggiPassword(string filename)

@@ -37,7 +37,7 @@ namespace ProgettoRistorante
                 piattiFiltro[i] = piattoVuoto;
             }
             risultato.Text = string.Empty;
-            piattiFiltro = filtroPortata(piatti, "Portata:\nAntipasto\n", ref cont, ref contFiltro);
+            piattiFiltro = filtroPortata(piatti, "Portata:\r\nAntipasto\r\n", ref cont, ref contFiltro);
             if (contFiltro > 0)
                 risultato.Text = ToString(piattiFiltro, contFiltro);
                 
@@ -50,7 +50,7 @@ namespace ProgettoRistorante
                 piattiFiltro[i] = piattoVuoto;
             }
             risultato.Text = string.Empty;
-            piattiFiltro = filtroPortata(piatti, "Portata:\nPrimo\n", ref cont, ref contFiltro);
+            piattiFiltro = filtroPortata(piatti, "Portata:\r\nPrimo\r\n", ref cont, ref contFiltro);
             if (contFiltro > 0)
                 risultato.Text = ToString(piattiFiltro, contFiltro);
         }
@@ -62,7 +62,7 @@ namespace ProgettoRistorante
                 piattiFiltro[i] = piattoVuoto;
             }
             risultato.Text = string.Empty;
-            piattiFiltro = filtroPortata(piatti, "Portata:\nSecondo\n", ref cont, ref contFiltro);
+            piattiFiltro = filtroPortata(piatti, "Portata:\r\nSecondo\r\n", ref cont, ref contFiltro);
             if (contFiltro > 0)
                 risultato.Text = ToString(piattiFiltro, contFiltro);
         }
@@ -74,7 +74,7 @@ namespace ProgettoRistorante
                 piattiFiltro[i] = piattoVuoto;
             }
             risultato.Text = string.Empty;
-            piattiFiltro = filtroPortata(piatti, "Portata:\nDessert\n", ref cont, ref contFiltro);
+            piattiFiltro = filtroPortata(piatti, "Portata:\r\nDessert\r\n", ref cont, ref contFiltro);
             if (contFiltro > 0)
                 risultato.Text = ToString(piattiFiltro, contFiltro);
         }
@@ -86,40 +86,41 @@ namespace ProgettoRistorante
             string[] tmp = line.Split('\n');
             for(int i=0; i < tmp.Length; i++)
             {
-                if (tmp[i] == "//")
+                if (tmp[i] == "//\r")
                 {
                     i++;
-                    while (tmp[i] != "//")
+                    while (tmp[i] != "//\r")
                     {
                         i++;
                     }
                     i++;
                 }
-                if (tmp[i] == "Nome:")
+                if (tmp[i] == "Nome:\r")
                 {
-                    piatti[cont].nome = $"Nome:\n{tmp[i + 1]}\n";
+                    piatti[cont].nome = $"Nome:\r\n{tmp[i + 1]}\n";
                 }
-                if (tmp[i] == "Prezzo:")
+                if (tmp[i] == "Prezzo:\r")
                 {
-                    piatti[cont].prezzo = $"Prezzo:\n{tmp[i + 1]}\n";
+                    piatti[cont].prezzo = $"Prezzo:\r\n{tmp[i + 1]}\n";
                 }
-                if (tmp[i] == "Ingredienti:")
+                if (tmp[i] == "Ingredienti:\r")
                 {
                     int tmp2 = 1;
+                    i++;
                     piatti[cont].ingredienti = new string[100];
-                    piatti[cont].ingredienti[0] = "Ingredienti:";
-                    while (tmp[i] != "Portata:")
+                    piatti[cont].ingredienti[0] = "Ingredienti:\r";
+                    while (tmp[i] != "Portata:\r")
                     {
                         piatti[cont].ingredienti[tmp2] = tmp[i]+"\n";
                         tmp2++;
                         i++;
                     }
                 }
-                if (tmp[i] == "Portata:")
+                if (tmp[i] == "Portata:\r")
                 {
-                    piatti[cont].portata = $"Portata:\n{tmp[i + 1]}\n";
+                    piatti[cont].portata = $"Portata:\r\n{tmp[i + 1]}\n";
                 }
-                if (tmp[i] == ";")
+                if (tmp[i] == ";\r")
                 {
                     risultato.Text += "\n";
                     cont++;
@@ -163,7 +164,6 @@ namespace ProgettoRistorante
             string line = "";
             for (int j = 0; j < cont; j++)
             {
-                piatti[j].ingredienti = new string[100];
                 line += piatti[j].nome;
                 line += piatti[j].prezzo;
                 for (int i = 0; i < piatti[j].ingredienti.Length; i++)

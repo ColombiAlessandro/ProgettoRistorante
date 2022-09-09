@@ -89,38 +89,58 @@ namespace ProgettoRistorante
         {
             if (piattiBox.Text != string.Empty)
             {
-                string piattiEliminati = leggiEliminati(@"Menu.csv");
-                string file = Leggi(@"Menu.csv");
-                bool isOver = false;
-                string[] fileSplit = file.Split('\n');
-                for(int i=0; i < fileSplit.Length; i++)
+                MessageBoxButtons pulsantiSiNo = MessageBoxButtons.YesNo;
+                DialogResult conferma = MessageBox.Show("Confermi di voler ripristinare il piatto selezionato?", "Conferma", pulsantiSiNo);
+                if (conferma == DialogResult.Yes)
                 {
-                    if (fileSplit[i] == "//")
+                    string piattiEliminati = leggiEliminati(@"Menu.csv");
+                    string file = Leggi(@"Menu.csv");
+                    string[] fileSplit = file.Split('\n');
+                    bool isOver = false;
+                    for (int i = 0; i < fileSplit.Length; i++)
                     {
-                        isOver = true;
-                        if (fileSplit[i + 2] == piattiBox.Text)
+                        if (fileSplit[i] == "//")
                         {
-                            fileSplit[i] = string.Empty;
-                            i++;
-                            while (fileSplit[i] != "//")
+                            isOver = true;
+                            if (fileSplit[i + 2] == piattiBox.Text)
                             {
+                                fileSplit[i] = string.Empty;
                                 i++;
+                                while (fileSplit[i] != "//")
+                                {
+                                    i++;
+                                }
+                                fileSplit[i] = string.Empty;
+                                break;
                             }
-                            fileSplit[i] = string.Empty;
-                            break;
                         }
                     }
-                }
-                string tmp = "";
-                for(int i = 0; i < fileSplit.Length; i++)
+                    string tmp = "";
+                    for (int i = 0; i < fileSplit.Length; i++)
+                    {
+                        tmp += fileSplit[i] + "\n";
+                    }
+                    File.Delete(@"Menu.csv");
+                    scriviAppend(@"Menu.csv", tmp);
+                    piattiBox.Text = string.Empty;
+                    RecuperaEliminati();
+                    MessageBox.Show("Piatto recuperato");
+                } else
                 {
-                    tmp += fileSplit[i] + "\n";
+                    Recupera rec = new Recupera();
+                    this.Hide();
+                    rec.ShowDialog();
+                    this.Close();
                 }
-                File.Delete(@"Menu.csv");
-                scriviAppend(@"Menu.csv",tmp);
-                piattiBox.Text = string.Empty;
-                RecuperaEliminati();
             }
+        }
+
+        private void indietroButton_Click(object sender, EventArgs e)
+        {
+            Gestore ges = new Gestore();
+            this.Hide();
+            ges.ShowDialog();
+            this.Close();
         }
     }
 }

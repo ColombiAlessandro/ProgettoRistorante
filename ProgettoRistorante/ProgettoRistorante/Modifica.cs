@@ -33,7 +33,7 @@ namespace ProgettoRistorante
         {
             
 
-            if (!(String.IsNullOrEmpty(nuovoNomeText.Text)) && !(String.IsNullOrEmpty(nuovoPrezzoText.Text)) && !(String.IsNullOrEmpty(ingredientiTextBox.Text)) && !(String.IsNullOrEmpty(portataBox.Text)))
+            if (!(String.IsNullOrEmpty(nuovoNomeText.Text)) && !(String.IsNullOrEmpty(nuovoPrezzoText.Text)) && !(String.IsNullOrEmpty(ingredientiTextBox.Text)) && !(String.IsNullOrEmpty(portataBox.Text))&&!(String.IsNullOrWhiteSpace(nuovoNomeText.Text)) && !(String.IsNullOrWhiteSpace(nuovoPrezzoText.Text)) && !(String.IsNullOrWhiteSpace(ingredientiTextBox.Text)) && !(String.IsNullOrWhiteSpace(portataBox.Text)))
             {
 
                 try
@@ -62,7 +62,7 @@ namespace ProgettoRistorante
                     }
                     if (tmp[i] != string.Empty)
                     {
-                        ingredienti += $"{tmp[i]}\n";
+                        ingredienti += $"{tmp[i]}\r\n";
                     }
                 }
                 string file = leggi(@"Menu.csv");
@@ -72,6 +72,7 @@ namespace ProgettoRistorante
                 {
                     File.Delete(@"Menu.csv");
                     scriviAppend(@"Menu.csv", fileMod);
+                    MessageBox.Show("Piatto modificato");
                 } else
                 {
                     MessageBox.Show("Piatto non trovato");
@@ -101,7 +102,7 @@ namespace ProgettoRistorante
                     string[] tmp = controllo[i].Split('\n');
                     if (tmp[1] == nome)
                     {
-                        string nuovo = $"Nome:\n{nuovoNome}\nPrezzo:\n{prezzo}\nIngredienti:\n+{ingredienti}\nPortata:\n{portata}\n;\n";
+                        string nuovo = $"Nome:\r\n{nuovoNome}\r\nPrezzo:\r\n{prezzo}\r\nIngredienti:\r\n{ingredienti}\r\nPortata:\r\n{portata}\r\n;\r\n";
                         controllo[i] = nuovo;
                         isFound = true;
                     }
@@ -114,7 +115,7 @@ namespace ProgettoRistorante
             {
                 if (controllo[i] != null)
                 {
-                    fileMod += $"{controllo[i]}\n";
+                    fileMod += $"{controllo[i]}\r\n";
                 }
             }
             return fileMod;
@@ -162,6 +163,14 @@ namespace ProgettoRistorante
         private void ingredientiTextBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void indietroBottone_Click(object sender, EventArgs e)
+        {
+            Gestore ges = new Gestore();
+            this.Hide();
+            ges.ShowDialog();
+            this.Close();
         }
     }
 }

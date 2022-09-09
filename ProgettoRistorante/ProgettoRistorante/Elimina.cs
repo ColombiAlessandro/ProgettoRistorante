@@ -61,7 +61,7 @@ namespace ProgettoRistorante
         {
             string[] file = stringa.Split('\n');
             string[] newFile = new string[file.Length];
-            bool isCancelled = false;
+            
             int cont = 0;
             for (int i = 0; i < file.Length; i++)
             {
@@ -140,7 +140,7 @@ namespace ProgettoRistorante
             }
             File.Delete(@"Menu.csv");
             scriviAppend(@"Menu.csv", file);
-
+            MessageBox.Show("File ricompattato");
         }
 
         private void indietroButton_Click(object sender, EventArgs e)

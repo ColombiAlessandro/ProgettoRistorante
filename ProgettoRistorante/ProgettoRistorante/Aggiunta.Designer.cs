@@ -59,6 +59,7 @@ namespace ProgettoRistorante
             this.ingredientiText.Size = new System.Drawing.Size(124, 147);
             this.ingredientiText.TabIndex = 1;
             this.ingredientiText.Text = "";
+            this.ingredientiText.TextChanged += new System.EventHandler(this.ingredientiText_TextChanged);
             // 
             // prezzoText
             // 

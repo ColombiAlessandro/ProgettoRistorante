@@ -102,6 +102,7 @@ namespace ProgettoRistorante
                 File.Delete(@"Ordine.csv");
                 scriviAppend(@"Ordine.csv", file);
                 nomiBox.Items.Clear();
+                MessageBox.Show("Ordine annullato");
                 string[] nomiPiatti = leggi(@"Ordine.csv", ref cont);
                 for (int i = 0; i < cont; i++)
                 {

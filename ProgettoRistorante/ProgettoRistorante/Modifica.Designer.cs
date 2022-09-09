@@ -51,6 +51,7 @@ namespace ProgettoRistorante
             this.indietroBottone.TabIndex = 0;
             this.indietroBottone.Text = "Indietro";
             this.indietroBottone.UseVisualStyleBackColor = true;
+            this.indietroBottone.Click += new System.EventHandler(this.indietroBottone_Click);
             // 
             // nomeText
             // 

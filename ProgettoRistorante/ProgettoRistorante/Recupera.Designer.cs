@@ -43,6 +43,7 @@ namespace ProgettoRistorante
             this.indietroButton.TabIndex = 0;
             this.indietroButton.Text = "Indietro";
             this.indietroButton.UseVisualStyleBackColor = true;
+            this.indietroButton.Click += new System.EventHandler(this.indietroButton_Click);
             // 
             // piattiBox
             // 
